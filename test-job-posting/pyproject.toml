@@ -11,6 +11,9 @@ crewai = "^0.41.1"
 crewai-tools = "^0.4.26"
 python-dotenv = "^1.0.1"
 
+[tool.poetry.scripts]
+test_job_posting = "test_job_posting.main:run"
+train = "test_job_posting.main:train"
 
 [build-system]
 requires = ["poetry-core"]
